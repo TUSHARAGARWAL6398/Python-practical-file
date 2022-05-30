@@ -1,0 +1,15 @@
+Q12. write a python program to raise an exception if interest rate is greater than 100.
+
+def simple_interest(amount, year, rate):
+    try:
+        if rate > 100:
+            raise ValueError(rate)
+        interest = (amount * year * rate) / 100
+        print('The Simple Interest is', interest)
+        return interest
+    except ValueError:
+        print('interest rate is out of range', rate)
+amount=int(input())
+year=int(input())
+rate=int(input())
+simple_interest(amount,year,rate)
