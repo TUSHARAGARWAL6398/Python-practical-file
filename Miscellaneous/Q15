@@ -1,0 +1,11 @@
+Q15. Write a program that infinetely receives positive integer as input and prints its square. If a negative number is entered than raise an exception ,display a relevant error message.
+
+try:
+  while True:
+    n=int(input("enter a positive number"))
+    if n>=0:
+      print(n*n)
+    else:
+      raise ValueError("Negative number")
+except ValueError as v:
+  print(ve.args)
